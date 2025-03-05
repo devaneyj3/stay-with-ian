@@ -1,3 +1,12 @@
+import bedroom from "../public/images/bedroom.webp";
+import dinning_room from "../public/images/dinning_room.webp";
+import evening_ambiance from "../public/images/evening_ambiance.webp";
+import interior from "../public/images/interior.webp";
+import rustic_farmhouse from "../public/images/rustic_farmhouse.webp";
+import suburban from "../public/images/suburban.webp";
+import carlos from "../public/images/carlos.webp";
+import bob from "../public/images/bob.webp";
+import alice from "../public/images/alice.webp";
 const DUMMY_DATA = [
 	{
 		id: 1,
@@ -8,15 +17,12 @@ const DUMMY_DATA = [
 		rating: 4.8,
 		reviewCount: 42,
 		location: "Portland, OR",
-		images: [
-			"https://via.placeholder.com/600x400?text=Cottage+1",
-			"https://via.placeholder.com/600x400?text=Cottage+2",
-		],
+		images: [bedroom, rustic_farmhouse],
 		amenities: ["Wi-Fi", "Kitchen", "Free Parking", "Fireplace"],
 		host: {
 			id: 101,
 			name: "Alice",
-			avatar: "https://via.placeholder.com/100x100?text=Alice",
+			avatar: alice,
 		},
 	},
 	{
@@ -28,15 +34,12 @@ const DUMMY_DATA = [
 		rating: 4.5,
 		reviewCount: 87,
 		location: "New York, NY",
-		images: [
-			"https://via.placeholder.com/600x400?text=Apartment+1",
-			"https://via.placeholder.com/600x400?text=Apartment+2",
-		],
+		images: [suburban, interior],
 		amenities: ["Wi-Fi", "Air Conditioning", "Gym", "Elevator"],
 		host: {
 			id: 102,
 			name: "Bob",
-			avatar: "https://via.placeholder.com/100x100?text=Bob",
+			avatar: bob,
 		},
 	},
 	{
@@ -48,15 +51,12 @@ const DUMMY_DATA = [
 		rating: 4.7,
 		reviewCount: 65,
 		location: "Miami, FL",
-		images: [
-			"https://via.placeholder.com/600x400?text=Bungalow+1",
-			"https://via.placeholder.com/600x400?text=Bungalow+2",
-		],
+		images: [dinning_room, evening_ambiance],
 		amenities: ["Wi-Fi", "Kitchen", "Ocean View", "Parking"],
 		host: {
 			id: 103,
 			name: "Carlos",
-			avatar: "https://via.placeholder.com/100x100?text=Carlos",
+			avatar: carlos,
 		},
 	},
 ];

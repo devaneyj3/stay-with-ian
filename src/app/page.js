@@ -40,7 +40,7 @@ export default function Home() {
 						<p>{location}</p>
 						<p>Your Host</p>
 						<p>{name}</p>
-						<p>{avatar}</p>
+						<Image src={avatar} alt={name} width={100} height={100} />
 						<p>Your Host</p>
 					</div>
 				);

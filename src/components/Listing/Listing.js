@@ -1,11 +1,27 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import DUMMY_DATA from "../../../data/dummy_data";
 import styles from "./Listing.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faHeart as fasHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
 
 export default function Listing() {
+	const [favoritPropertyIds, setFavoritePropertyIds] = useState(new Set());
+
+	const heartIconClicked = (id) => {
+		setFavoritePropertyIds((prev) => {
+			const newSet = new Set(prev);
+			if (newSet.has(id)) {
+				newSet.delete(id);
+			} else {
+				newSet.add(id);
+			}
+			return newSet;
+		});
+	};
+
 	return (
 		<div className={styles.listings}>
 			{DUMMY_DATA.map((loc) => {
@@ -20,14 +36,18 @@ export default function Listing() {
 					amenities,
 					host,
 				} = loc;
-				const { id: hostId, name, avatar } = host;
-				// amenities is an array of 4
-				//images an array of two
 				const mainImage = images[0];
+
 				return (
 					<div key={id} className={styles.listing}>
 						<div>
 							<div className={styles.img_wrapper}>
+								<FontAwesomeIcon
+									onClick={() => heartIconClicked(id)}
+									className={styles.heart}
+									// Use .has(id) to determine which heart to show
+									icon={favoritPropertyIds.has(id) ? fasHeart : farHeart}
+								/>
 								<Image src={mainImage} alt={title} fill />
 							</div>
 							<div>

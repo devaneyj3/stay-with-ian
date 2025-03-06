@@ -14,6 +14,7 @@
   }
 
   .img_wrapper {
+    display: flex ;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
@@ -24,7 +25,6 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .rating {
@@ -36,6 +36,18 @@
     width: 15px !important;
     margin-right: 1px;
     margin-top: 4px;
+  }
+  .heart {
+    position: absolute;
+    z-index: 1;
+    width: 35px;
+    color: red;
+    top: 5px;
+    left: 230px;
+    &:hover {
+     color: crimson;
+      cursor: pointer;
+    }
   }
 }
 

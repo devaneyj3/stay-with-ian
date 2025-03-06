@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import DUMMY_DATA from "../../../data/dummy_data";
 import styles from "./HomeTypeNav.module.scss";
 
-export default function HomeTypeNave() {
+export default function HomeTypeNav() {
 	const [iconIsClicked, setIconIsClicked] = useState(null);
 
 	const [tags, setTags] = useState([]);

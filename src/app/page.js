@@ -1,7 +1,7 @@
 import Listing from "@/components/Listing/Listing";
 import styles from "./home.module.scss";
 import Searchbar from "@/components/Searchbar/Searchbar";
-import HomeTypeNave from "@/components/HomeTypeNav/HomeTypeNave";
+import HomeTypeNav from "@/components/HomeTypeNav/HomeTypeNav";
 export default function Home() {
 	return (
 		<div className={styles.page_container}>
@@ -10,7 +10,7 @@ export default function Home() {
 			</div>
 			<hr className={styles.break} />
 			<section className={styles.homeTypeNav_container}>
-				<HomeTypeNave />
+				<HomeTypeNav />
 			</section>
 			<Listing />
 		</div>

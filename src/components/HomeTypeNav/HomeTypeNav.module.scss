@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+  .tag {
+    color: gray;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+      color: black;
+      border-bottom: 1px solid grey;
+    }
+  }
+  .active {
+    font-size: 30px;
+    color: black;
+    border-bottom: 1px solid black;
+  }

@@ -19,6 +19,7 @@ const DUMMY_DATA = [
 		location: "Portland, OR",
 		images: [bedroom, rustic_farmhouse],
 		amenities: ["Wi-Fi", "Kitchen", "Free Parking", "Fireplace"],
+		tag: "Cottage",
 		host: {
 			id: 101,
 			name: "Alice",
@@ -31,6 +32,7 @@ const DUMMY_DATA = [
 		description:
 			"A stylish apartment in the heart of the city with modern amenities and a stunning view.",
 		pricePerNight: 200,
+		tag: "Apartment",
 		rating: 4.5,
 		reviewCount: 87,
 		location: "New York, NY",
@@ -50,7 +52,62 @@ const DUMMY_DATA = [
 		pricePerNight: 180,
 		rating: 4.7,
 		reviewCount: 65,
+		tag: "Ocean View",
 		location: "Miami, FL",
+		images: [dinning_room, evening_ambiance],
+		amenities: ["Wi-Fi", "Kitchen", "Ocean View", "Parking"],
+		host: {
+			id: 103,
+			name: "Carlos",
+			avatar: carlos,
+		},
+	},
+	{
+		id: 4,
+		title: "Beachside Bungalow",
+		description:
+			"Wake up to the sound of the waves in this charming bungalow right on the beach.",
+		pricePerNight: 80,
+		rating: 4.7,
+		tag: "Amazing View",
+		reviewCount: 65,
+		location: "Brighton, MI",
+		images: [dinning_room, evening_ambiance],
+		amenities: ["Wi-Fi", "Kitchen", "Ocean View", "Parking"],
+		host: {
+			id: 103,
+			name: "Carlos",
+			avatar: carlos,
+		},
+	},
+	{
+		id: 5,
+		title: "Beachside Bungalow",
+		description:
+			"Wake up to the sound of the waves in this charming bungalow right on the beach.",
+		pricePerNight: 380,
+		rating: 4.7,
+		reviewCount: 65,
+		tag: "Amazing View",
+		location: "Los Angelas, CA",
+		images: [dinning_room, evening_ambiance],
+		amenities: ["Wi-Fi", "Kitchen", "Ocean View", "Parking"],
+		host: {
+			id: 103,
+			name: "Carlos",
+			avatar: carlos,
+		},
+	},
+	{
+		id: 6,
+		title: "Beachside Bungalow",
+		description:
+			"Wake up to the sound of the waves in this charming bungalow right on the beach.",
+		pricePerNight: 280,
+		rating: 4.7,
+		reviewCount: 65,
+		tag: "Urban",
+		location: "Chicago, IL",
 		images: [dinning_room, evening_ambiance],
 		amenities: ["Wi-Fi", "Kitchen", "Ocean View", "Parking"],
 		host: {

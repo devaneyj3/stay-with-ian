@@ -14,3 +14,14 @@ html {
 li {
 	list-style: none;
 }
+
+/* ensure the reactstrap doesn't overwrite styles */
+a {
+	color: black !important;
+	text-decoration: none !important;
+}
+a:hover {
+	background-color: #efefef;
+	border-radius: 20px;
+	padding: 10px;
+}

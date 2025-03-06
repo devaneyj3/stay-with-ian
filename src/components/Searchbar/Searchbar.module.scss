@@ -1,0 +1,23 @@
+.searchbar {
+  border: 1px solid grey;
+  width: 50%;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 6px 10px 34px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 10px 34px -18px rgba(0,0,0,0.75);
+  box-shadow: 6px 10px 34px -18px rgba(0,0,0,0.75); 
+}
+.contents {
+
+}
+.search_text {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  border: 1px solid black;
+  text-align: center;
+
+}
